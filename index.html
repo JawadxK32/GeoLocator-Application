@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS630 Lab03</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>GeoLocator Application</h1>
+        <form method="get" action="../index.html">
+            <button type="submit">Home</button>
+        </form>
+    </header>
+    <section class="sideBar">
+      <div id="drop_zone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
+        Drag & Drop a Text(.txt) File <bold>HERE</bold>
+      </div>
+      <article>
+        <p id="clientLoc">Your Location:</p>
+        <p id="dropLoc">Drop Location:</p>
+        <p id="distance">Distance:</p>
+      </article>
+    </section>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi0sQdCIExBZ_t1gT0-wlE8nrY5KrxZeU&callback=initMap"
+    async defer></script>
+  </body>
+</html>
