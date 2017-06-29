@@ -3,3 +3,5 @@ A web application where user can 1. locate their current location or set their c
 Google map api was used for the map
 
 Drag and drop the test.txt file on the dropzone to calculate distance. You can also modify the location (lattitude and longitude coordinations).
+
+Live link: https://jawadxk32.github.io/GeoLocator-Application/
